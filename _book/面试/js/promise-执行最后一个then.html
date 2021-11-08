@@ -1,0 +1,36 @@
+<script>
+
+
+
+
+    function lastPromise(promiseFunction) {
+        const callbacks = []
+
+        promiseFunction().then(res => {
+            if (callbacks.length)
+                callbacks[callbacks.length - 1](res)
+        })
+
+        return () => {
+            return {
+                then(fn) {
+                    callbacks.push(fn)
+                }
+            }
+        }
+    }
+
+
+    let count = 1
+    let promiseFunction = () => new Promise(rs => {
+        setTimeout(() => {
+            rs(count++)
+        })
+    })
+    let lastFn = lastPromise(promiseFunction)
+
+    lastFn().then(console.log)
+    lastFn().then(console.log)
+    lastFn().then(console.log)
+
+</script>

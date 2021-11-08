@@ -1,0 +1,52 @@
+<script>
+
+    function Person(name) {
+        this.name = name
+        this.say = function () {
+            console.log('I am ' + name)
+        }
+    }
+    Person.prototype.age = '10'
+
+    // 1. 原型链继承
+    function Per() {
+        // this.name = 'per'
+    }
+    Per.prototype = new Person()
+
+    const p1 = new Per()
+    console.log(p1)
+    const p11 = new Per()
+    console.log(p11)
+    p11.__proto__.age = 12
+
+    console.log(p11.age, p1.age)
+    
+    // 2. 构造函数继承
+    function PerCall() {
+        Person.call(this, 'percall')
+    }
+
+    const p2 = new PerCall()
+    console.log(p2)
+
+    // 3. 组合继承
+    function PerAll (name){
+        Person.call(this, name)
+    }
+    PerAll.prototype = new Person()
+
+    const p3 = new PerAll('perall')
+    console.log(p3)
+
+    function Extends(obj){
+        function Fn(){}
+        Fn.prototype = obj
+        return new Fn()
+    }
+
+    const p = new Person()
+    const p4 = Extends(p)
+    console.log(p4)
+
+</script>

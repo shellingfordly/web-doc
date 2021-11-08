@@ -1,0 +1,27 @@
+<button id="btn">函数防抖</button>
+
+<script>
+
+
+  function debounce(callback, delay) {
+    let timer = null
+    return function () {
+      const arg = arguments
+      const _this = this
+      if (timer) {
+        clearTimeout(timer)
+      }
+      timer = setTimeout(() => callback.apply(_this, arg), delay)
+    }
+  }
+
+  const fn = debounce(function (xx) {
+    console.log(Date.now(), xx, this);
+  }, 1000)
+
+
+  btn.onclick = function () {
+    fn.call(this, 'xxx')
+  }
+
+</script>
