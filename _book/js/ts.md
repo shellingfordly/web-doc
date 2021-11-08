@@ -166,7 +166,7 @@ const person = {
 
 ## 一些属性
 
-- keyof 使用interface的key做类型
+- keyof 使用 interface 的 key 做类型
 
 ```ts
 interface Person {
@@ -196,15 +196,14 @@ type Func = (xx: any) => void;
 type Func = (xx: any) => any;
 
 type Func = {
-  (): any
-}
+  (): any;
+};
 
 type XXX = {
   a(): string;
   b: () => string;
-}
+};
 ```
-
 
 ## Utility Types
 
@@ -216,42 +215,35 @@ type XXX = {
 - Omit\<Type, Keys> 忽略
 - Exclude\<Type, ExcludedUnion> 排除
 - Extract\<Type, Union> 提取
-- NonNullable\<Type> 排除null和undefined
+- NonNullable\<Type> 排除 null 和 undefined
 - Parameters\<Type> 参数面板
 - ConstructorParameters\<Type> 构造器参数
 - ReturnType\<Type> 返回值类型
 - InstanceType\<Type> 实例类型
-- ThisParameterType\<Type> 
+- ThisParameterType\<Type>
 - OmitThisParameter\<Type>
 - ThisType\<Type>
 
-
 ### Record\<Keys,Type>
 
-构建一个对象类型，键名为keys，键值为Type
-
+构建一个对象类型，键名为 keys，键值为 Type
 
 ### Pick\<Type,Keys>
 
-从Type中选一组属性键构成一个类型
-
-
-
+从 Type 中选一组属性键构成一个类型
 
 ## & |
 
 - &
 - |
 
-
 ## 几个关键字
 
 1. infer
 2. typeof
 3. keyof
-    - 获取某对象的键名
+   - 获取某对象的键名
 4. in
-
 
 ## 不理解
 
@@ -267,9 +259,7 @@ type Mutable<Obj> = {
 };
 
 type Readonly<T> = { readonly [P in keyof T]: T[P] };
-
 ```
-
 
 ### ReturnType
 
@@ -295,17 +285,16 @@ const foo: ReturnType<Func> = "1";
 - 例子
 
 ```ts
-function fn(){
+function fn() {
   return {
-    name: ''
-  }
+    name: "",
+  };
 }
 
 const obj: ReturnType<typeof fn> = {
-  name: ''
-}
+  name: "",
+};
 ```
-
 
 ### 接口定义
 
