@@ -1,9 +1,5 @@
 # TypeScript
 
-标签（空格分隔）： ts
-
----
-
 ## 快速入门
 
 ### public
