@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Vue Router · GitBook</title>
+        <title>Nginx · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="problem.html" />
     
-    
-    <link rel="prev" href="slot.html" />
+    <link rel="prev" href="linux.html" />
     
 
     </head>
@@ -348,9 +346,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../vue2/vue.html">
+        <li class="chapter " data-level="1.9.1" data-path="../../vue/vue2/vue.html">
             
-                <a href="../vue2/vue.html">
+                <a href="../../vue/vue2/vue.html">
             
                     
                     Vue2
@@ -375,9 +373,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.2.1" data-path="vue3.html">
+        <li class="chapter " data-level="1.9.2.1" data-path="../../vue/vue3/vue3.html">
             
-                <a href="vue3.html">
+                <a href="../../vue/vue3/vue3.html">
             
                     
                     知识点
@@ -389,9 +387,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.2.1.1" data-path="ref.html">
+        <li class="chapter " data-level="1.9.2.1.1" data-path="../../vue/vue3/ref.html">
             
-                <a href="ref.html">
+                <a href="../../vue/vue3/ref.html">
             
                     
                     Ref
@@ -402,9 +400,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2.1.2" data-path="slot.html">
+        <li class="chapter " data-level="1.9.2.1.2" data-path="../../vue/vue3/slot.html">
             
-                <a href="slot.html">
+                <a href="../../vue/vue3/slot.html">
             
                     
                     插槽
@@ -415,9 +413,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9.2.1.3" data-path="vue-router.html">
+        <li class="chapter " data-level="1.9.2.1.3" data-path="../../vue/vue3/vue-router.html">
             
-                <a href="vue-router.html">
+                <a href="../../vue/vue3/vue-router.html">
             
                     
                     Vue Router
@@ -433,9 +431,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2.2" data-path="problem.html">
+        <li class="chapter " data-level="1.9.2.2" data-path="../../vue/vue3/problem.html">
             
-                <a href="problem.html">
+                <a href="../../vue/vue3/problem.html">
             
                     
                     problem
@@ -451,9 +449,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../vite/vite.html">
+        <li class="chapter " data-level="1.9.3" data-path="../../vue/vite/vite.html">
             
-                <a href="../vite/vite.html">
+                <a href="../../vue/vite/vite.html">
             
                     
                     Vite
@@ -523,9 +521,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.1.1" data-path="../../other/tool/google/search.html">
+        <li class="chapter " data-level="1.12.1.1" data-path="../tool/google/search.html">
             
-                <a href="../../other/tool/google/search.html">
+                <a href="../tool/google/search.html">
             
                     
                     Google
@@ -555,9 +553,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.12.2.1" data-path="../../other/server/linux.html">
+        <li class="chapter " data-level="1.12.2.1" data-path="linux.html">
             
-                <a href="../../other/server/linux.html">
+                <a href="linux.html">
             
                     
                     Linux
@@ -568,9 +566,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.12.2.2" data-path="../../other/server/nginx.html">
+        <li class="chapter active" data-level="1.12.2.2" data-path="nginx.html">
             
-                <a href="../../other/server/nginx.html">
+                <a href="nginx.html">
             
                     
                     Nginx
@@ -621,7 +619,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Vue Router</a>
+        <a href="../.." >Nginx</a>
     </h1>
 </div>
 
@@ -636,60 +634,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vue-router">vue-router</h1>
-<h2 id="useroute">useRoute</h2>
+                                <h1 id="ngnix">ngnix</h1>
 <ul>
-<li>&#x53EA;&#x80FD;&#x5728;&#x8DEF;&#x7531;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;</li>
-<li>&#x5728;&#x666E;&#x901A; js &#x6587;&#x4EF6;&#x4E2D;&#x5F15;&#x5165;&#x65E0;&#x6CD5;&#x83B7;&#x53D6; route</li>
+<li>&#x542F;&#x52A8;</li>
 </ul>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> { useRoute } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;vue-router&quot;</span>;
-<span class="hljs-keyword">const</span> route = useRoute();
-</code></pre>
-<h3 id="&#x4F5C;&#x7528;&#x57DF;&#x95EE;&#x9898;">&#x4F5C;&#x7528;&#x57DF;&#x95EE;&#x9898;</h3>
-<ul>
-<li>&#x5728; setup &#x4E2D;&#x8C03;&#x7528; go &#x6CA1;&#x95EE;&#x9898;</li>
-<li>&#x70B9;&#x51FB;&#x65F6; route &#x548C; router &#x5C31;&#x662F; undefined</li>
-<li>&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x5728;js&#x4E2D;&#x83B7;&#x53D6;&#x5230;route/router&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x7EC4;&#x4EF6;&#x5230;setup&#x4E2D;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;</li>
+<pre><code>sudo systemctl start nginx
+</code></pre><ul>
+<li>&#x505C;&#x6B62;</li>
 </ul>
-<pre><code class="lang-vue">&lt;template&gt;
-  &lt;button @click=&quot;go&quot;&gt;&#x70B9;&#x51FB;&#x8DF3;&#x8F6C;&lt;/button&gt;
-&lt;/template&gt;
-&lt;script lang=&quot;ts&quot;&gt;
-import { defineComponent } from &quot;vue&quot;;
-import { useRoute, useRouter } from &quot;vue-router&quot;;
-
-export default defineComponent({
-  name: &quot;&quot;,
-  setup() {
-    go();
-    function go() {
-      const route = useRoute();
-      const router = useRouter();
-      console.log(route, router);
-    }
-    return {
-      go,
-    };
-  },
-});
-&lt;/script&gt;
-</code></pre>
-<ul>
-<li>&#x5728; setup &#x4E2D;&#x58F0;&#x660E; route &#x548C; router &#x5C31;&#x6CA1;&#x95EE;&#x9898;</li>
+<pre><code>sudo systemctl stop nginx
+</code></pre><ul>
+<li>&#x91CD;&#x542F;</li>
 </ul>
-<pre><code class="lang-js">setup(){
-  <span class="hljs-keyword">const</span> route = useRoute();
-  <span class="hljs-keyword">const</span> router = useRouter();
-  go()
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">go</span>(<span class="hljs-params"></span>)</span>{
-    <span class="hljs-built_in">console</span>.log(route, router);
-  }
-  <span class="hljs-keyword">return</span> {
-    go,
-  }
-}
+<pre><code>sudo systemctl restart nginx
+</code></pre><ul>
+<li>&#x91CD;&#x65B0;&#x52A0;&#x8F7D;</li>
+</ul>
+<pre><code>sudo systemctl reload nginx
+</code></pre><ul>
+<li>&#x5F00;&#x542F;&#x5F00;&#x673A;&#x542F;&#x52A8;</li>
+</ul>
+<pre><code>sudo systemctl enable nginx
+</code></pre><ul>
+<li>&#x5173;&#x95ED;&#x5F00;&#x673A;&#x542F;&#x52A8;</li>
+</ul>
+<pre><code>sudo systemctl disable nginx
 </code></pre>
-
                                 
                                 </section>
                             
@@ -716,14 +686,10 @@ export default defineComponent({
 
             
                 
-                <a href="slot.html" class="navigation navigation-prev " aria-label="Previous page: 插槽">
+                <a href="linux.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Linux">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="problem.html" class="navigation navigation-next " aria-label="Next page: problem">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -732,7 +698,7 @@ export default defineComponent({
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue Router","level":"1.9.2.1.3","depth":4,"next":{"title":"problem","level":"1.9.2.2","depth":3,"path":"vue/vue3/problem.md","ref":"vue/vue3/problem.md","articles":[]},"previous":{"title":"插槽","level":"1.9.2.1.2","depth":4,"path":"vue/vue3/slot.md","ref":"vue/vue3/slot.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"collapsible_menu":true,"variables":{"title":"Web Doc"},"gitbook":"*"},"file":{"path":"vue/vue3/vue-router.md","mtime":"2021-11-09T14:11:41.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-09T14:21:39.958Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Nginx","level":"1.12.2.2","depth":3,"previous":{"title":"Linux","level":"1.12.2.1","depth":3,"path":"other/server/linux.md","ref":"other/server/linux.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"collapsible_menu":true,"variables":{"title":"Web Doc"},"gitbook":"*"},"file":{"path":"other/server/nginx.md","mtime":"2021-11-09T14:11:41.986Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-09T14:21:39.958Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
