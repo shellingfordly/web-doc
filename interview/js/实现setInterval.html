@@ -1,0 +1,11 @@
+<script>
+  function mySetInterval(callback, delay) {
+    setTimeout(() => {
+      callback()
+      mySetInterval(callback, delay)
+    }, delay)
+  }
+  mySetInterval(() => {
+    console.log(Date.now())
+  }, 1000)
+</script>

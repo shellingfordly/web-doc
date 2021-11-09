@@ -1,0 +1,28 @@
+<button id="btn">函数节流</button>
+<script>
+
+
+  function throttle(callback, delay) {
+    let timer = null
+    return function () {
+      if (timer) {
+        return
+      }
+      timer = setTimeout(() => {
+        callback.apply(this, arguments)
+        timer = null
+      }, delay)
+    }
+  }
+
+
+  const fn = throttle(function (x) {
+    console.log(this, x)
+  }, 1000)
+
+  btn.onclick = function () {
+    fn.call(this, 'xxx')
+  }
+
+
+</script>

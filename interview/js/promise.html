@@ -1,0 +1,169 @@
+<script>
+    const PromiseState = {
+      Pending: 'pending',
+      Fulfilled: 'fulfilled',
+      Rejected: 'rejected'
+    }
+  
+    function Promise(executor) {
+  
+      this.promiseState = PromiseState.Pending
+      this.promiseResult = undefined
+      this.callback = []
+      this.thenPromise = null
+  
+      const isPending = () => {
+        if (this.promiseState === PromiseState.Pending) return true
+        else return false
+      }
+  
+      const resolve = (data) => {
+        if (!isPending()) return
+        this.promiseState = PromiseState.Fulfilled
+        this.promiseResult = data
+        // 执行回调函数
+        this.callback.forEach(item => {
+          item.onResolved(data)
+        })
+  
+      }
+  
+      const reject = (err) => {
+        if (!isPending()) return
+        this.promiseState = PromiseState.Rejected
+        this.promiseResult = err || 'Err'
+        // 执行回调函数
+        this.callback.forEach(item => {
+          item.onRejected(err)
+        })
+      }
+  
+      try {
+        executor(resolve, reject)
+      } catch (error) {
+        reject(error)
+      }
+    }
+  
+    Promise.prototype.then = function (onResolved, onRejected) {
+      let result = undefined
+      const self = this
+  
+      if (typeof onRejected !== 'function') {
+        onRejected = err => { throw err }
+      }
+  
+      if (typeof onResolved !== 'function') {
+        onResolved = value => value
+      }
+  
+      return new Promise((resolve, reject) => {
+        function callback(type) {
+          setTimeout(() => {
+            try {
+              let result = type(self.promiseResult)
+              if (result instanceof Promise) {
+                result.then(v => {
+                  resolve(result)
+                }, e => {
+                  reject(e)
+                })
+              } else {
+                resolve(result)
+              }
+            } catch (err) {
+              reject(err)
+            }
+          })
+        }
+  
+        if (this.promiseState === PromiseState.Fulfilled) {
+          callback(onResolved)
+        }
+        if (this.promiseState === PromiseState.Rejected) {
+          callback(onRejected)
+        }
+        if (this.promiseState === PromiseState.Pending) {
+          this.callback.push({
+            onResolved: function () {
+              callback(onResolved)
+            },
+            onRejected: function () {
+              callback(onRejected)
+            }
+          })
+        }
+      })
+    }
+  
+  
+    Promise.prototype.catch = function (onRejected) {
+      return this.then(undefined, onRejected)
+    }
+  
+    Promise.resolve = function (value) {
+      return new Promise((resolve, reject) => {
+        if (value instanceof Promise) {
+          value.then(v => {
+            resolve(v)
+          }, e => {
+            reject(e)
+          })
+        } else {
+          resolve(value)
+        }
+      })
+    }
+  
+    Promise.reject = function (value) {
+      return new Promise((resolve, reject) => {
+        reject(value)
+      })
+    }
+  
+    Promise.all = function (promiseList) {
+      const len = promiseList.length
+      return new Promise((resolve, reject) => {
+        const resultList = []
+        let count = 0
+        for (let i = 0; i < len; i++) {
+          const promise = promiseList[i];
+          promise.then(value => {
+            count++
+            resultList[i] = value
+            if (count === len) {
+              resolve(resultList)
+            }
+          }, err => {
+            reject(err)
+          })
+        }
+      })
+    }
+  
+    Promise.race = function (promiseList) {
+      return new Promise((resolve, reject) => {
+        for (let i = 0; i < promiseList.length; i++) {
+          const promise = promiseList[i];
+          promise.then(value => {
+            resolve(value)
+          }, err => {
+            reject(err)
+          })
+        }
+      })
+    }
+  
+    const p = new Promise((res, rej) => {
+      // setTimeout(() => {
+      res('OK!')
+      // }, 2000)
+    })
+  
+    p.then(res => {
+      console.log(res);
+    }).then(res=>{
+        console.log(res)
+    })
+  
+  </script>
