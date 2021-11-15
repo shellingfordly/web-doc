@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>插槽 · GitBook</title>
+        <title>slot · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -160,16 +160,48 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../../http/http.html">
+        <li class="chapter " data-level="1.5" >
             
-                <a href="../../http/http.html">
+                <span>
             
                     
                     http
             
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../http/http.html">
+            
+                <a href="../../http/http.html">
+            
+                    
+                    url
+            
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../http/status.html">
+            
+                <a href="../../http/status.html">
+            
+                    
+                    status
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -192,7 +224,7 @@
                 <a href="../../js/js.html">
             
                     
-                    JavaScript
+                    javaScript
             
                 </a>
             
@@ -205,7 +237,7 @@
                 <a href="../../js/ts.html">
             
                     
-                    TypeScript
+                    typeScript
             
                 </a>
             
@@ -264,7 +296,7 @@
                 <a href="../../react/props.html">
             
                     
-                    组件通信
+                    props
             
                 </a>
             
@@ -339,7 +371,7 @@
                 <span>
             
                     
-                    Vue 相关
+                    Vue
             
                 </span>
             
@@ -380,7 +412,7 @@
                 <a href="vue3.html">
             
                     
-                    知识点
+                    Knowledge
             
                 </a>
             
@@ -394,7 +426,7 @@
                 <a href="ref.html">
             
                     
-                    Ref
+                    ref
             
                 </a>
             
@@ -407,7 +439,7 @@
                 <a href="slot.html">
             
                     
-                    插槽
+                    slot
             
                 </a>
             
@@ -420,7 +452,7 @@
                 <a href="vue-router.html">
             
                     
-                    Vue Router
+                    vue router
             
                 </a>
             
@@ -438,7 +470,7 @@
                 <a href="problem.html">
             
                     
-                    problem
+                    Problem
             
                 </a>
             
@@ -528,7 +560,7 @@
                 <a href="../../other/tool/google/search.html">
             
                     
-                    Google
+                    google
             
                 </a>
             
@@ -560,7 +592,7 @@
                 <a href="../../other/server/linux.html">
             
                     
-                    Linux
+                    linux
             
                 </a>
             
@@ -573,7 +605,7 @@
                 <a href="../../other/server/nginx.html">
             
                     
-                    Nginx
+                    nginx
             
                 </a>
             
@@ -621,7 +653,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >插槽</a>
+        <a href="../.." >slot</a>
     </h1>
 </div>
 
@@ -650,10 +682,10 @@
   &lt;div&gt;
     &lt;Son&gt;
       &lt;template #less=&quot;data&quot;&gt;
-        {{ data.data }}
+
       &lt;/template&gt;
       &lt;template #more=&quot;{ data, other: otherMsg}&quot;&gt;
-        {{data}} --- {{otherMsg}}
+         --- 
       &lt;/template&gt;
     &lt;/Son&gt;
   &lt;/div&gt;
@@ -675,10 +707,10 @@ export default {
 <pre><code class="lang-vue">&lt;template&gt;
   &lt;div class=&quot;son&quot;&gt;
     &lt;slot name=&quot;less&quot; :data=&quot;data&quot;&gt;
-      {{ msg }}
+
     &lt;/slot&gt;
     &lt;slot name=&quot;more&quot; v-bind=&quot;{ ...state }&quot;&gt;
-      {{ msg }}
+
     &lt;/slot&gt;
   &lt;/div&gt;
 &lt;/template&gt;
@@ -725,12 +757,12 @@ export default {
 
             
                 
-                <a href="ref.html" class="navigation navigation-prev " aria-label="Previous page: Ref">
+                <a href="ref.html" class="navigation navigation-prev " aria-label="Previous page: ref">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="vue-router.html" class="navigation navigation-next " aria-label="Next page: Vue Router">
+                <a href="vue-router.html" class="navigation navigation-next " aria-label="Next page: vue router">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -741,7 +773,7 @@ export default {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"插槽","level":"1.9.2.1.2","depth":4,"next":{"title":"Vue Router","level":"1.9.2.1.3","depth":4,"path":"vue/vue3/vue-router.md","ref":"vue/vue3/vue-router.md","articles":[]},"previous":{"title":"Ref","level":"1.9.2.1.1","depth":4,"path":"vue/vue3/ref.md","ref":"vue/vue3/ref.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"collapsible_menu":true,"variables":{"title":"Web Doc"},"gitbook":"*"},"file":{"path":"vue/vue3/slot.md","mtime":"2021-11-09T14:11:41.998Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-09T14:25:08.605Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"slot","level":"1.9.2.1.2","depth":4,"next":{"title":"vue router","level":"1.9.2.1.3","depth":4,"path":"vue/vue3/vue-router.md","ref":"vue/vue3/vue-router.md","articles":[]},"previous":{"title":"ref","level":"1.9.2.1.1","depth":4,"path":"vue/vue3/ref.md","ref":"vue/vue3/ref.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"collapsible_menu":true,"variables":{"title":"Web Doc"},"gitbook":"*"},"file":{"path":"vue/vue3/slot.md","mtime":"2021-11-08T03:02:37.777Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-11-15T01:50:42.641Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
