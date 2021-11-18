@@ -6,7 +6,7 @@
     "serve": "gitbook serve"
   },
   "dependencies": {
-    "gitbook": "3.2.3"
+    "gitbook-cli": "2.3.2"
   },
   "homepage": "https://shellingfordly.github.io/web-doc"
 }
