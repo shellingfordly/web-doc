@@ -32,7 +32,7 @@
 - [Interview](interview/interview.md)
 - [Other]()
   - [Tool]()
-    - [google](other/tool/google/search.md)
+    - [google](other/tool/google.md)
   - [Server]()
     - [linux](other/server/linux.md)
     - [nginx](other/server/nginx.md)
