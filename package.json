@@ -5,5 +5,8 @@
     "build": "gitbook build",
     "serve": "gitbook serve"
   },
+  "dependencies": {
+    "gitbook": "3.2.3"
+  },
   "homepage": "https://shellingfordly.github.io/web-doc"
 }
