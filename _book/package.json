@@ -4,5 +4,6 @@
   "scripts": {
     "build": "gitbook build",
     "serve": "gitbook serve"
-  }
+  },
+  "homepage": "https://shellingfordly.github.io/web-doc"
 }
