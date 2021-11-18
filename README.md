@@ -17,3 +17,7 @@ git clone https://github.com/shellingfordly/web-doc.git
 ```
 gitbook serve
 ```
+
+## update
+
+use github actions
