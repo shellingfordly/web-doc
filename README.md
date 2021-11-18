@@ -18,6 +18,6 @@ git clone https://github.com/shellingfordly/web-doc.git
 gitbook serve
 ```
 
-## update
+## Preview
 
-use github actions
+[web-doc](https://shellingfordly.github.io/web-doc/)
