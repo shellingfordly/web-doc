@@ -1,0 +1,9 @@
+{
+  "name": "web-doc",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "gitbook build",
+    "serve": "gitbook serve"
+  },
+  "homepage": "https://shellingfordly.github.io/web-doc"
+}
