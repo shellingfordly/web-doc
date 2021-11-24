@@ -1,0 +1,21 @@
+<div id="progress"></div>
+
+<script>
+  let i = 0;
+
+  function count() {
+
+    // 做繁重的任务的一部分 (*)
+    do {
+      i++;
+      progress.innerHTML = i;
+    } while (i % 1e3 != 0);
+
+    if (i < 1e4) {
+      setTimeout(count);
+    }
+
+  }
+  count();
+
+</script>

@@ -6,6 +6,7 @@
 - [Html]()
   - [webapi](html/webapi.md)
 - [http]()
+  - [url](http/cancel-request.md)
   - [url](http/http.md)
   - [status](http/status.md)
 - [JavaScript]()

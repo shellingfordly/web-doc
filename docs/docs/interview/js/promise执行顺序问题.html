@@ -1,0 +1,62 @@
+<!-- <script>
+
+  const first = () => (new Promise((resolve, reject) => {
+    console.log(3);
+    let p = new Promise((resolve, reject) => {
+      console.log(7);
+      setTimeout(() => {
+        console.log(5);
+        resolve(6);
+      }, 0)
+      resolve(1);
+    });
+    resolve(2);
+    p.then((arg) => {
+      console.log(arg);
+    });
+
+  }));
+
+  first().then((arg) => {
+    console.log(arg);
+  });
+  console.log(4);
+</script> -->
+
+<script>
+  console.log('Promis');
+  const p1 = new Promise((res) => {
+    new Error('0')
+  }).then(res => {
+    console.log('p1-res', 1)
+  }).catch((e) => {
+    console.log('p1-err', e)
+    return 2
+  })
+
+
+
+  const p2 = new Promise((_, rej) => {
+    setTimeout(() => {
+      rej(3)
+    }, 1000)
+  })
+
+  const p3 = Promise.race([p1, p2])
+  // p3.then(res => {
+  //   console.log('p3-res', res)
+  // }, err => {
+  //   console.log('p3-err', err)
+  // })
+
+  const p4 = new Promise(res => {
+    setTimeout(() => {
+      res(4)
+    }, 100)
+  })
+
+  Promise.all([p3, p4]).then(res => {
+    console.log(res)
+  })
+
+</script>
