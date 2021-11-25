@@ -1,18 +1,13 @@
+const navConfig = require("./navConfig");
+const sidebarConfig = require("./sidebarConfig");
+
 module.exports = {
-  title: "Hello VuePress",
+  title: "Web Doc",
   description: "Just playing around",
   locales: false,
   themeConfig: {
-    logo: "/assets/header.png",
-    nav: [
-      { text: "Home", link: "/" },
-      {
-        text: "Github",
-        link: "https://github.com/shellingfordly/web-doc",
-        target: "_blank",
-      },
-    ],
-    sidebar: ["/", "/html", "/guide"],
+    nav: navConfig,
+    sidebar: sidebarConfig,
     displayAllHeaders: true,
     lastUpdated: "上次更新",
     smoothScroll: true,
