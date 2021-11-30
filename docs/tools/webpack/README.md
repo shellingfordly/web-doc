@@ -1,5 +1,13 @@
 ---
 sidebar: auto
+title: README
+date: 2021-11-25 10:31:03
+permalink: /pages/bafe1b/
+categories: 
+  - tools
+  - webpack
+tags: 
+  - 
 ---
 
 # webpack

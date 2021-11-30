@@ -1,3 +1,13 @@
+---
+title: linux
+date: 2021-11-25 14:02:53
+permalink: /pages/f4566d/
+categories:
+  - tools
+  - server
+tags:
+  - 
+---
 # Linux
 
 ## 基础命令

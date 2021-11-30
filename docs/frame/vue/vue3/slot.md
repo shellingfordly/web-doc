@@ -1,3 +1,14 @@
+---
+title: slot
+date: 2021-11-30 13:15:19
+permalink: /pages/cb9ab0/
+categories:
+  - frame
+  - vue
+  - vue3
+tags:
+  - 
+---
 ### 插槽
 
 父组件

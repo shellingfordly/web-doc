@@ -1,3 +1,14 @@
+---
+title: js
+date: 2021-11-25 14:02:23
+permalink: /pages/9bedfe/
+categories:
+  - web
+  - javascript
+  - js
+tags:
+  - 
+---
 # JavaScript
 
 ## 对象

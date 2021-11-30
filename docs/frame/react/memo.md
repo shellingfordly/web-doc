@@ -1,3 +1,13 @@
+---
+title: memo
+date: 2021-11-25 13:58:45
+permalink: /pages/af13fc/
+categories:
+  - frame
+  - react
+tags:
+  - 
+---
 # memo
 
 ## React.memo()

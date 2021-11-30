@@ -1,3 +1,14 @@
+---
+title: ts
+date: 2021-11-25 14:02:23
+permalink: /pages/95f2bc/
+categories:
+  - web
+  - javascript
+  - js
+tags:
+  - 
+---
 # TypeScript
 
 ## 快速入门

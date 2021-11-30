@@ -1,3 +1,13 @@
+---
+title: axios
+date: 2021-11-25 14:02:11
+permalink: /pages/649f19/
+categories:
+  - web
+  - axios
+tags:
+  - 
+---
 # axois
 
 ## axois 和 Axios 的关系

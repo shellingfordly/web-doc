@@ -1,5 +1,13 @@
 ---
 sidebar: auto
+title: README
+date: 2021-11-25 10:27:00
+permalink: /pages/93f87b/
+categories: 
+  - web
+  - javascript
+tags: 
+  - 
 ---
 
 # JavaScript

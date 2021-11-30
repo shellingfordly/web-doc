@@ -5,6 +5,7 @@ module.exports = {
   title: "Web Doc",
   description: "Just playing around",
   locales: false,
+  theme: "vuepress-theme-reco",
   themeConfig: {
     nav: navConfig,
     sidebar: sidebarConfig,

@@ -1,3 +1,13 @@
+---
+title: props
+date: 2021-11-25 13:58:45
+permalink: /pages/256f0b/
+categories:
+  - frame
+  - react
+tags:
+  - 
+---
 ## 观察者模式
 
 ```js

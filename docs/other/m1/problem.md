@@ -1,3 +1,13 @@
+---
+title: problem
+date: 2021-11-25 14:03:02
+permalink: /pages/86be77/
+categories:
+  - other
+  - m1
+tags:
+  - 
+---
 # m1
 
 ## m1 上安装包问题

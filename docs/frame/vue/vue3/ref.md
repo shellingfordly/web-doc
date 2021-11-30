@@ -1,3 +1,14 @@
+---
+title: ref
+date: 2021-11-30 13:15:19
+permalink: /pages/e6d8b8/
+categories:
+  - frame
+  - vue
+  - vue3
+tags:
+  - 
+---
 # ref
 
 - ref返回一个Ref类型的数据

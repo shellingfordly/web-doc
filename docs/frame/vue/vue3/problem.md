@@ -1,3 +1,14 @@
+---
+title: problem
+date: 2021-11-30 13:15:19
+permalink: /pages/9fec99/
+categories:
+  - frame
+  - vue
+  - vue3
+tags:
+  - 
+---
 # 问题
 
 ## getCurrentInstance

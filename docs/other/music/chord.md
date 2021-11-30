@@ -1,3 +1,13 @@
+---
+title: chord
+date: 2021-11-25 14:09:07
+permalink: /pages/e57a2c/
+categories:
+  - other
+  - music
+tags:
+  - 
+---
 ## 和弦
 
 - 三和弦

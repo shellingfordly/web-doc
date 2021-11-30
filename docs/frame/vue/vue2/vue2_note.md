@@ -1,3 +1,14 @@
+---
+title: vue2_note
+date: 2021-11-30 11:31:18
+permalink: /pages/fa47b3/
+categories:
+  - frame
+  - vue
+  - vue2
+tags:
+  - 
+---
 # Vue2 学习笔记
 
 ## vuex
