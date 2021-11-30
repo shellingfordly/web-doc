@@ -1,3 +1,7 @@
+---
+sidebar: auto
+---
+
 # Google
 
 ## Google 搜索

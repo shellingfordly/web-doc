@@ -1,4 +1,178 @@
-# Vue3
+# Vue3 学习笔记
+
+## 新特性
+
+- 更快
+  - 虚拟 DOM 重写
+  - 优化 slots 的生成
+  - 静态树提升
+  - 静态属性提升
+  - 基于 proxy 响应式
+- 更小
+  - 通过摇树优化核心库体积
+- 更容易维护
+  - ts + 模块化
+- 更友好
+  - 跨平台： 编译器和运行时核心与平台无关，使 vue 更容易与任何平台（Web、Android、Ios）一起使用
+- 更容易使用
+  - ts
+  - 更好的调试支持
+  - 独立的响应式模块
+  - Composition API
+    - 逻辑复用
+
+### 虚拟 DOM 重写
+
+### 插槽
+
+1. 默认内容和扩展点
+
+- vue 中的插槽可以有默认的内容
+
+```html
+<button class="button" @click="$emit('click')">
+  <slot>
+    <!-- Used if no slot is provided -->
+    Click me
+  </slot>
+</button>
+```
+
+2. 单个作用域的插槽不需要 template 标签
+
+```html
+<DataTable>
+  <template #header="tableAttributes">
+    <TableHeader v-bind="tableAttributes" />
+  </template>
+</DataTable>
+
+<!-- 简写 -->
+<DataTable #header="tableAttributes">
+  <TableHeader v-bind="tableAttributes" />
+</DataTable>
+```
+
+3. 监听插槽的变化
+
+> MutationObserver 接口提供了监视对 DOM 树所做更改的能力。它被设计为旧的 Mutation Events 功能的替代品，该功能是 DOM3 Events 规范的一部分。
+
+```ts
+export default {
+  mounted() {
+    // 当有变化时调用`update`
+    const observer = new MutationObserver(this.update);
+
+    // 监听此组件的变化
+    observer.observe(this.$el, {
+      childList: true,
+      subtree: true,
+    });
+  },
+};
+```
+
+### 使用自组件的 props 类型
+
+```js
+import Icon from "./Icon";
+export default {
+  components: { Icon },
+  props: {
+    ...Icon.props,
+  },
+};
+```
+
+```js
+import Icon from "./Icon";
+
+const iconProps = {};
+
+Object.entries(Icon.props).forEach((key, val) => {
+  iconProps[`icon${key.toUpperCase()}`] = val;
+});
+
+export default {
+  components: { Icon },
+  props: {
+    ...iconProps,
+    heading: {
+      type: String,
+      required: true,
+    },
+  },
+};
+```
+
+### 检测元素在外部/内部点击
+
+```js
+window.addEventListener("mousedown", (e) => {
+  // 获取被点击的元素
+  const clickedEl = e.target;
+
+  if (el.contains(clickedEl)) {
+    //在 "el "里面点击了
+  } else {
+    //在 "el "外点击了
+  }
+});
+```
+
+### 递归插槽
+
+```vue
+<!-- VFor.vue -->
+<template>
+  <div>
+    <!--  渲染第一项 -->
+    {{ list[0] }}
+    <!-- 如果我们有更多的项目，继续!但是不要使用我们刚刚渲染的项 -->
+    <v-for v-if="list.length > 1" :list="list.slice(1)" />
+  </div>
+</template>
+```
+
+- 使用插槽，设置默认内容
+- 方便对特殊的子项进行更改
+
+```vue
+<template>
+  <div>
+    <!-- Pass the item into the slot to be rendered -->
+    <slot v-bind:item="list[0]">
+      <!-- Default -->
+      {{ list[0] }}
+    </slot>
+
+    <v-for v-if="list.length > 1" :list="list.slice(1)">
+      <!-- Recursively pass down scoped slot -->
+      <template v-slot="{ item }">
+        <slot v-bind:item="item" />
+      </template>
+    </v-for>
+  </div>
+</template>
+```
+
+- 使用
+
+```vue
+<template>
+  <div>
+    <!-- 常规列表 -->
+    <v-for :list="list" />
+
+    <!-- 加粗的项目列表 -->
+    <v-for :list="list">
+      <template v-slot="{ item }">
+        <strong>{{ item }}</strong>
+      </template>
+    </v-for>
+  </div>
+</template>
+```
 
 ## setup
 

@@ -28,14 +28,36 @@ module.exports = [
       },
       {
         text: "Vue",
-        link: "/vue/",
+        items: [
+          {
+            text: "Vue2",
+            link: "/frame/vue/vue2/introduce",
+          },
+          {
+            text: "Vue3",
+            link: "/frame/vue/vue3/introduce",
+          },
+          {
+            text: "vite",
+            link: "/frame/vue/vite/introduce",
+          },
+        ],
       },
     ],
+  },
+  {
+    text: "其他",
+    ariaLabel: "Tools Menu",
+    items: [],
   },
   {
     text: "工具",
     ariaLabel: "Tools Menu",
     items: [
+      {
+        text: "server",
+        link: "/tools/server/linux",
+      },
       {
         text: "Webpack",
         link: "/tools/webpack/",
@@ -43,6 +65,14 @@ module.exports = [
       {
         text: "Git",
         link: "/tools/git/",
+      },
+      {
+        text: "vim",
+        link: "/tools/vim/",
+      },
+      {
+        text: "google",
+        link: "/tools/google/",
       },
     ],
   },
