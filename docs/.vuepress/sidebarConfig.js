@@ -7,7 +7,7 @@ module.exports = {
     "ref",
     "slot",
     "vue-router",
-    "源码",
+    "soundCode",
     "problem",
     "case",
   ],
