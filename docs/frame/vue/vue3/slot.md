@@ -1,17 +1,13 @@
 ---
-title: slot
-date: 2021-11-30 13:15:19
-permalink: /pages/cb9ab0/
 categories:
   - frame
   - vue
   - vue3
-tags:
-  - 
 ---
-### 插槽
 
-父组件
+## 插槽
+
+### 父组件
 
 - v-slot 简写 #
 - 在 slot 上传递的属性可以被 v-slot 接收
@@ -25,8 +21,8 @@ tags:
       <template #less="data">
         {{ data.data }}
       </template>
-      <template #more="{ data, other: otherMsg}">
-        {{data}} --- {{otherMsg}}
+      <template #more="{ data, other: otherMsg }">
+        {{ data }} --- {{ otherMsg }}
       </template>
     </Son>
   </div>
@@ -42,7 +38,7 @@ export default {
 </script>
 ```
 
-自组件
+### 自组件
 
 - 传递多属性时可以使用 v-bind
 

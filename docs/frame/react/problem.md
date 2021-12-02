@@ -1,12 +1,7 @@
 ---
-title: problem
-date: 2021-11-25 13:58:45
-permalink: /pages/8fa75a/
 categories:
   - frame
   - react
-tags:
-  - 
 ---
 # 问题
 

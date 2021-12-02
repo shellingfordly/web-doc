@@ -7,13 +7,13 @@
   - [HTTP](/web/http/)
 
 - 框架
-  - [React](/frame/react/introduce)
+  - [React](/frame/react/)
   - Vue
-    - [Vue2](/frame/vue/vue2/introduce)
-    - [Vue3](/frame/vue/vue3/introduce)
-    - [Vite](/frame/vue/vite/introduce)
+    - [Vue2](/frame/vue/vue2/)
+    - [Vue3](/frame/vue/vue3/)
+    - [Vite](/frame/vue/vite/)
 - 工具
-  - [server](/tools/server/linux)
+  - [server](/tools/server)
   - [Webpack](/tools/webpack/)
   - [Git](/tools/git/)
   - [Vim](/tools/vim/)

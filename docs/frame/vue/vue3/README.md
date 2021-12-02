@@ -1,14 +1,11 @@
 ---
-title: vue3_note
-date: 2021-11-30 13:15:19
-permalink: /pages/1b9f59/
+sidebar: auto
 categories:
   - frame
   - vue
   - vue3
-tags:
-  - 
 ---
+
 # Vue3 学习笔记
 
 ## 新特性

@@ -1,13 +1,10 @@
 ---
-title: react
-date: 2021-11-25 13:58:45
-permalink: /pages/8adad3/
+sidebar: auto
 categories:
   - frame
   - react
-tags:
-  - 
 ---
+
 # react
 
 ---
@@ -705,5 +702,3 @@ export default class OptimizationComponent extends PureComponent {
 ### antd
 
 - 按需加载
-
-![package.version](/assets/frame/react/package.version.png)

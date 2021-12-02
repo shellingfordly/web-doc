@@ -1,13 +1,9 @@
 ---
-title: useEffect
-date: 2021-11-25 13:58:45
-permalink: /pages/31ecae/
 categories:
   - frame
   - react
-tags:
-  - 
 ---
+
 ## useEffect
 
 在 useEffect 中进行异步获取数据，并使用 useState 设置数据时会导致内存泄露

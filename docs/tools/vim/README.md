@@ -1,13 +1,8 @@
 ---
 sidebar: auto
-title: README
-date: 2021-11-25 14:08:28
-permalink: /pages/5b83eb/
 categories: 
   - tools
   - vim
-tags: 
-  - 
 ---
 
 # VIM 命令

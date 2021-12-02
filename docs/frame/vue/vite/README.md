@@ -1,14 +1,11 @@
 ---
-title: introduce
-date: 2021-11-30 13:36:48
-permalink: /pages/97f1cc/
+sidebar: auto
 categories:
   - frame
   - vue
   - vite
-tags:
-  - 
 ---
+
 # Vite
 
 ## vite.config.ts

@@ -1,13 +1,10 @@
 ---
-title: nginx
-date: 2021-11-25 14:02:53
-permalink: /pages/7d80a1/
+sidebar: auto
 categories:
   - tools
   - server
-tags:
-  - 
 ---
+
 # ngnix
 
 ## 常用命令

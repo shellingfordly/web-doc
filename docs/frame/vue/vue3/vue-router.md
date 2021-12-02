@@ -1,14 +1,10 @@
 ---
-title: vue-router
-date: 2021-11-30 13:15:19
-permalink: /pages/a65cfc/
 categories:
   - frame
   - vue
   - vue3
-tags:
-  - 
 ---
+
 # vue-router
 
 ## useRoute
@@ -25,7 +21,7 @@ const route = useRoute();
 
 - 在 setup 中调用 go 没问题
 - 点击时 route 和 router 就是 undefined
-- 所以无法在js中获取到route/router，只能在组件到setup中可以访问到
+- 所以无法在 js 中获取到 route/router，只能在组件到 setup 中可以访问到
 
 ```vue
 <template>
