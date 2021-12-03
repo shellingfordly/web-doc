@@ -4,16 +4,42 @@
 
 ## Install
 
-- download
+### download
 
 ```
 git clone https://github.com/shellingfordly/web-doc.git
 ```
 
-- run
+### action
 
-```
+- gitbook
+
+gitbook 分支是使用 gitbook 创建的项目
+
+```py
+# 安装gitbook
+npm install gitbook-cli -g
+# 切换分支
+git checkout gitbook
+# run
 gitbook serve
+# build
+gitbook build
+```
+
+- vuepress
+
+main 分支是使用 vuepress 创建的项目
+
+```py
+# 切换分支
+git checkout main
+# install
+yarn
+# run
+yarn dev
+# build
+yarn build
 ```
 
 ## Preview
