@@ -3462,6 +3462,11 @@ vary@~1.1.2:
   resolved "https://registry.nlark.com/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
+vue-click-outside@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.nlark.com/vue-click-outside/download/vue-click-outside-1.1.0.tgz#48b7680b518923e701643cccb3e165854aad99eb"
+  integrity sha1-SLdoC1GJI+cBZDzMs+FlhUqtmes=
+
 vue-demi@*:
   version "0.12.1"
   resolved "https://registry.npmmirror.com/vue-demi/download/vue-demi-0.12.1.tgz?cache=0&sync_timestamp=1637503265606&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvue-demi%2Fdownload%2Fvue-demi-0.12.1.tgz#f7e18efbecffd11ab069d1472d7a06e319b4174c"
@@ -3493,6 +3498,13 @@ vue@^3.2.20:
     "@vue/runtime-dom" "3.2.23"
     "@vue/server-renderer" "3.2.23"
     "@vue/shared" "3.2.23"
+
+vuepress-theme-yuu@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmmirror.com/vuepress-theme-yuu/download/vuepress-theme-yuu-3.1.1.tgz#3beecfe51dbd91bd6c45fa3f865b091610e77931"
+  integrity sha1-O+7P5R29kb1sRfo/hlsJFhDneTE=
+  dependencies:
+    vue-click-outside "^1.1.0"
 
 vuepress@^2.0.0-beta.27:
   version "2.0.0-beta.27"
