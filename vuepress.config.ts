@@ -3,6 +3,7 @@ import type { DefaultThemeOptions } from "vuepress";
 
 export default defineUserConfig<DefaultThemeOptions>({
   title: "Web Doc",
+  base: "/web-doc/",
   themeConfig: {
     navbar: [
       { text: "Home", link: "/" },
