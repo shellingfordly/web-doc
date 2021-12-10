@@ -50,6 +50,10 @@ export default defineUserConfig<DefaultThemeOptions>({
               },
             ],
           },
+          {
+            text: "Three.js",
+            link: "/frame/three.js/",
+          },
         ],
       },
       {
