@@ -1,0 +1,4 @@
+- integrate v.整合, 集成
+- device n.设备
+- algorithm n.算法
+- contain v.包含
