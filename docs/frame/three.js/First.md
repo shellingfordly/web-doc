@@ -1,10 +1,3 @@
----
-sidebar: auto
-categories:
-  - frame
-  - three.js
----
-
 # Three.js
 
 - [Three.js 零基础入门教程(郭隆邦)](http://www.yanhuangxueyuan.com/Three.js/)

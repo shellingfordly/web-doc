@@ -1,10 +1,3 @@
----
-sidebar: auto
-categories:
-  - frame
-  - three.js
----
-
 # Second Sence
 
 ## 创建物体阴影

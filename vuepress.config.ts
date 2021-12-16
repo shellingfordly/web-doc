@@ -31,7 +31,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         children: [
           {
             text: "React",
-            link: "/frame/react/",
+            link: "/frame/react/react.md",
           },
           {
             text: "Vue",
@@ -42,7 +42,7 @@ export default defineUserConfig<DefaultThemeOptions>({
               },
               {
                 text: "Vue3",
-                link: "/frame/vue/vue3/",
+                link: "/frame/vue/vue3/vue3.md",
               },
               {
                 text: "vite",
@@ -52,7 +52,7 @@ export default defineUserConfig<DefaultThemeOptions>({
           },
           {
             text: "Three.js",
-            link: "/frame/three.js/",
+            link: "/frame/three.js/First.md",
           },
         ],
       },
@@ -98,10 +98,9 @@ export default defineUserConfig<DefaultThemeOptions>({
       },
     ],
     sidebar: {
-      "/frame/react/": ["README", "hooks", "memo", "problem"],
-      "/frame/vue/vue2/": ["README", "vue2_note"],
+      "/frame/react/": ["react", "hooks", "memo", "problem"],
       "/frame/vue/vue3/": [
-        "README",
+        "vue3",
         "ref",
         "slot",
         "vue-router",
@@ -109,7 +108,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         "problem",
         "case",
       ],
-      "/frame/vue/vite/": ["README"],
+      "/frame/three.js/": ["First", "Material", "Second", "Third"],
       "/frame/tools/": ["README"],
       "/tools/server/": ["linux", "nginx"],
     },
