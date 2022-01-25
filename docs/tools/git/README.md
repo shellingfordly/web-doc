@@ -166,3 +166,23 @@ git reset --hard
 ```
 git checkout -b dev origin/xxx
 ```
+
+### tag
+
+- 查看
+
+```
+git tag
+```
+
+- 添加
+
+```
+git tag -a v1.0.0 -m "version 1.0.0"
+```
+
+- push
+
+```
+git push origin --tags
+```
