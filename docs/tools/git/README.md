@@ -161,6 +161,20 @@ git branch -D xxx
 git reset --hard
 ```
 
+### 撤销 commit
+
+- 软撤销：只撤销 commit，不撤销 git add，本地代码不变
+
+```
+git reset --soft HEAD~1
+```
+
+- 硬撤销：撤销 commit，撤销 git add，本地代码变为指定版本
+
+```
+git reset --hard HEAD~1
+```
+
 ### 切换分支并拉去远程分支
 
 ```
