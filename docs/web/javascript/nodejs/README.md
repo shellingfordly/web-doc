@@ -42,3 +42,7 @@
 > fs.write(wfd, buf, offset, length, position)
 
 - 属性同 read
+
+### vm
+
+> vm.runInThisContext('let a = 1') 运行一串 js 代码字符串
