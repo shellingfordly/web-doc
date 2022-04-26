@@ -47,10 +47,18 @@ git clone git@github.com:xxx/xxx.git
 git status
 ```
 
-### 添加所有更改过文件
+### add
+
+- 添加所有更改过文件
 
 ```
 git add .
+```
+
+- 清除 add 的文件
+
+```
+git restore --staged [file_path]
 ```
 
 ### 提交
