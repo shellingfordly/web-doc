@@ -25,6 +25,10 @@
 - indexOf 在 buffer 中查找数据
 - copy 拷贝 buffer 中的数据
 
+### buffer 转换
+
+- 转 base64 **buffer.toString('base64ss')**
+
 ## 常用属性
 
 ### fs.read
