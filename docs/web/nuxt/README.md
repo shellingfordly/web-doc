@@ -119,3 +119,21 @@ export default defineNuxtConfig({
 ```
 
 ---
+
+## API
+
+### Composables
+
+### setPageLayout
+
+It can only be called within components' setup functions, plugins, and route middleware.
+
+> if set the layout dynamically on the server side before the layout is rendered by Vue to avoid a hydration mismatch.(within a plugin or route middleware.)
+
+### setRespons~eStatus
+
+It can only be called within component setup functions, plugins, and route middleware.
+
+> In the browser, it will have no effect.
+
+### useAsyncData
